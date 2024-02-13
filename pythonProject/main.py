@@ -13,10 +13,15 @@
 
 from file_exercise import create_file as c
 
+# write into the file
 # c.write_file()
-count = c.read_file()
+# getting the occurrences
+# count = c.read_file()
+#
+# print(f"The number {count[0]} occurred {count[1]} times")
 
-print(f"The number {count[0]} occurred {count[1]} times")
+# updating the file
+c.update_file()
 
 
 

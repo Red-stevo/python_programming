@@ -5,7 +5,7 @@
 def write_file():
     with open("nums_data.txt", "w") as nums_file:
         for i in range(6):
-            nums_file.write("\n" + input("Enter num 1 : ") + "," + input("Enter num 2 : "))
+            nums_file.write(input("Enter num 1 : ") + "," + input("Enter num 2 : ")+"\n")
 
 
 def read_file():
@@ -35,5 +35,19 @@ def read_file():
 
 # changing the file to now contain
 def update_file():
-    with open("nums_data.txt", "r+") as file:
-        pass
+    r_file = open("nums_data.txt", "r")
+    file_content = r_file.read()
+    r_file.close()
+    with open("update_file.txt", "w") as file:
+        nums = file_content.split("\n")
+        for i in nums:
+            num = i.split(",")
+            sum = 0
+            for e in num:
+                if e == " " or e == "":
+                    continue
+                e = int(e)
+                sum = sum + e
+            if e == "" or e == " ":
+                continue
+            file.write(f"Sum : {sum} | {i}\n")
