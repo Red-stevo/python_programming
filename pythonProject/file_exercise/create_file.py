@@ -5,7 +5,7 @@
 def write_file():
     with open("nums_data.txt", "w") as nums_file:
         for i in range(6):
-            nums_file.write("\n"+input("Enter num 1 : ") + "," + input("Enter num 2 : "))
+            nums_file.write("\n" + input("Enter num 1 : ") + "," + input("Enter num 2 : "))
 
 
 def read_file():
@@ -31,3 +31,9 @@ def read_file():
                     count = count + 1
 
     return [num, count]
+
+
+# changing the file to now contain
+def update_file():
+    with open("nums_data.txt", "r+") as file:
+        pass
