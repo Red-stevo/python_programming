@@ -10,8 +10,9 @@
 #
 # print(dir(sys))
 # # personal_method()
+import json
 
-from file_exercise import create_file as c
+# from file_exercise import create_file as c
 
 # write into the file
 # c.write_file()
@@ -21,7 +22,8 @@ from file_exercise import create_file as c
 # print(f"The number {count[0]} occurred {count[1]} times")
 
 # updating the file
-c.update_file()
+# c.update_file()
 
 
-
+print(dir(json))
+ 
