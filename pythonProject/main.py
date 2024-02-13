@@ -13,8 +13,10 @@
 
 from file_exercise import create_file as c
 
-c.write_file()
+# c.write_file()
+count = c.read_file()
 
+print(f"The number {count[0]} occurred {count[1]} times")
 
 
 
