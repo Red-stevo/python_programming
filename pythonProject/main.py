@@ -9,11 +9,9 @@
 #
 #
 # print(dir(sys))
-# # personal_method()
-import json
-
+#  personal_method()
 # from file_exercise import create_file as c
-
+from file_exercise import files_and_json as f
 # write into the file
 # c.write_file()
 # getting the occurrences
@@ -24,6 +22,6 @@ import json
 # updating the file
 # c.update_file()
 
+# f.create_file()
 
-print(dir(json))
- 
+f.read_json()
