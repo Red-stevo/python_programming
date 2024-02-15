@@ -28,6 +28,6 @@ def create_file():
 
 def read_json():
     with open("./json_data.txt", "r") as json_file:
-        data = json.loads(json_file.read())
-        for person in data:
-            print(data[person]["name"])
+        json_data = json.loads(json_file.read())
+        for person in json_data:
+            print(json_data[person]["name"])
