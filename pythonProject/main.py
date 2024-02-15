@@ -30,14 +30,25 @@
 """
 working with object-oriented programming.
 """
-from oop_concepts import __init__ as obj, Car
+from oop_concepts.python_inheritance import Child
 
-v8 = Car("Toyota V8", "250km/hr", "good")
+# from oop_concepts import python_inheritance as inheritance, Child
+#
+# v8 = Car("Toyota V8", "250km/hr", "good")
+#
+# v8.drive()
+# v8.break_down()
+#
+# vitz = Car("Toyota Vitz", "100km/hr", "bad")
+#
+# vitz.drive()
+# vitz.break_down()
 
-v8.drive()
-v8.break_down()
 
-vitz = Car("Toyota Vitz", "100km/hr", "bad")
+"""
+Working with python inheritance.
+"""
 
-vitz.drive()
-vitz.break_down()
+if __name__ == "__main__":
+    zion = Child()
+    zion.skill()
