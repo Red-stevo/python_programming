@@ -48,7 +48,19 @@ from oop_concepts.python_inheritance import Child
 """
 Working with python inheritance.
 """
+#
+# if __name__ == "__main__":
+#     zion = Child()
+#     zion.skill()
 
-if __name__ == "__main__":
-    zion = Child()
-    zion.skill()
+
+"""
+Working with python exception handling
+"""
+
+from oop_concepts.python_customer_exceptions import Test
+
+test = Test(6)
+
+test.check_number("b")
+
