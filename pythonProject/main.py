@@ -21,7 +21,7 @@
 #
 # # updating the file
 # # c.update_file()
-# 
+#
 # # f.create_file()
 #
 # # f.read_json()
@@ -64,3 +64,26 @@
 #
 # test.check_number("b")
 #
+"""
+Working with iterators.
+"""
+
+from oop_concepts.working_with_iterators import Remote_control
+
+remote = Remote_control()
+
+itr = iter(remote)
+
+try:
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+    next(itr)
+except StopIteration as e:
+    print("You Have Reached The End Of The Channel List")
