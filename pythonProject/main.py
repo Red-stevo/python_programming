@@ -11,7 +11,7 @@
 # print(dir(sys))
 #  personal_method()
 # from file_exercise import create_file as c
-from file_exercise import files_and_json as f
+# from file_exercise import files_and_json as f
 # write into the file
 # c.write_file()
 # getting the occurrences
@@ -24,4 +24,20 @@ from file_exercise import files_and_json as f
 
 # f.create_file()
 
-f.read_json()
+# f.read_json()
+
+
+"""
+working with object-oriented programming.
+"""
+from oop_concepts import __init__ as obj, Car
+
+v8 = Car("Toyota V8", "250km/hr", "good")
+
+v8.drive()
+v8.break_down()
+
+vitz = Car("Toyota Vitz", "100km/hr", "bad")
+
+vitz.drive()
+vitz.break_down()
