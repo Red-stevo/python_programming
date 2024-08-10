@@ -17,7 +17,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_5bae47c1d1db57539530ef72ce51667b {
+            <style> #map_d0b22164a9e74196b4c6d56ad8f4306d {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -30,20 +30,62 @@
 <body>
     
     
-            <div class="folium-map" id="map_5bae47c1d1db57539530ef72ce51667b" ></div>
+            <div class="folium-map" id="map_d0b22164a9e74196b4c6d56ad8f4306d" ></div>
         
 </body>
-<script>var bounds = null;
-var map_5bae47c1d1db57539530ef72ce51667b = L.map('map_5bae47c1d1db57539530ef72ce51667b',
-    {center: [0.5143,36.9571], zoom: 15, maxBounds: bounds, layers: [],
-        worldCopyJump: false, crs: L.CRS.EPSG3857});
-var tile_layer_78528c8ef4baba103cda1b7a2b9eeae9 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    {"attribution": null, "detectRetina": false, "maxZoom": 18, "minZoom": 1, "noWrap": false, "subdomains": "abc").addTo(map_5bae47c1d1db57539530ef72ce51667b);
-            var marker_3fc7a6bc55807b8dde867f2c32c6db4d = L.marker([0.5143,36.9571],
-                {icon: new L.Icon.Default()}).addTo(map_5bae47c1d1db57539530ef72ce51667b);
-                var popup_514fdd5de25b208338013782f7cae4bb = L.popup({maxWidth: '300'});
-                var html_b4eb1bf0d24b0572286168d964a5f6ec = $('<div id="html_b4eb1bf0d24b0572286168d964a5f6ec" style="width: 100.0%; height: 100.0%;">Nyeri, Dedan Kimathi University - Safaricom</div>')[0];
-                popup_514fdd5de25b208338013782f7cae4bb.setContent(html_b4eb1bf0d24b0572286168d964a5f6ec);
-                marker_3fc7a6bc55807b8dde867f2c32c6db4d.bindPopup(popup_514fdd5de25b208338013782f7cae4bb);
+<script>
+    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_d0b22164a9e74196b4c6d56ad8f4306d = L.map(
+                                  'map_d0b22164a9e74196b4c6d56ad8f4306d',
+                                  {center: [0.5143,36.9571],
+                                  zoom: 15,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_981a3da8c718860f5b1c28ba106259ea = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_d0b22164a9e74196b4c6d56ad8f4306d);
+        
+    
+
+            var marker_39ea2bf982cc5dd1fcae46662fa1b2eb = L.marker(
+                [0.5143,36.9571],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d0b22164a9e74196b4c6d56ad8f4306d);
+            
+    
+            var popup_31da0f72f305cca28f11b59648cb7d9f = L.popup({maxWidth: '300'});
+
+            
+                var html_bf6c2ff1c2641f31a5b650b6e261a9ff = $('<div id="html_bf6c2ff1c2641f31a5b650b6e261a9ff" style="width: 100.0%; height: 100.0%;">Nyeri, Dedan Kimathi University - Safaricom</div>')[0];
+                popup_31da0f72f305cca28f11b59648cb7d9f.setContent(html_bf6c2ff1c2641f31a5b650b6e261a9ff);
+            
+
+            marker_39ea2bf982cc5dd1fcae46662fa1b2eb.bindPopup(popup_31da0f72f305cca28f11b59648cb7d9f);
+
+            
+        
 </script>
 </html>
