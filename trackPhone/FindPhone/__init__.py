@@ -52,7 +52,7 @@ def main():
     geocoder = OpenCageGeocode(key)
 
     # Input the phone number with country code
-    phone_number_input = "+254705695815"
+    phone_number_input = "+254743531727"
 
     try:
         phone_number = validate_phone_number(phone_number_input)
@@ -77,7 +77,8 @@ def main():
         print(f"Latitude: {lat}, Longitude: {lng}")
 
         # Create a map to visualize the location
-        my_map = folium.Map(location=[lat, lng], zoom_start=15 if "Nyeri" in location_query else 6)
+        zoom_level = 15 if "Nyeri" in location_query else 10 if region else 6
+        my_map = folium.Map(location=[lat, lng], zoom_start=zoom_level)
         folium.Marker([lat, lng], popup=f"{region if region else country} - {service_provider}").add_to(my_map)
         my_map.save("location.html")
         print("Location map saved as 'location.html'.")
